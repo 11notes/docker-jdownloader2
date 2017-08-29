@@ -22,7 +22,6 @@ RUN mkdir -p /var/jdownloader2/downloads \
 # ------ define volumes ------ #
 VOLUME ["/var/jdownloader2/downloads", "/var/jdownloader2/config"]
 
-
 # ------ run once for update of packages and core ------ #
 RUN /usr/bin/java -Djava.awt.headless=true -jar /usr/bin/jDownloader
 
