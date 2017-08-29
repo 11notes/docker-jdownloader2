@@ -5,15 +5,17 @@ Dockerfile to create and run your own jdownloader2 inside an alpine linux docker
 ## docker volumes
 
 /var/jdownloader2/config
+
 All jDownloader configuration files are stored here.
 
 /var/jdownloader2/downloads
-Downloads will be added here, you can change this setting via WebUI (my.jdownloader.org) or in the "" file.
+
+Downloads will be added here, you can change this setting via WebUI (my.jdownloader.org) or in the "org.jdownloader.settings.GeneralSettings.json" file.
 
 ## docker build
-
-docker build -t YOURTAG .
-
+```shell
+docker build -t YOURNAME/YOURCONTAINER:YOURTAG .
+```
 ## docker run
 ```shell
 docker run -d \
@@ -47,7 +49,7 @@ Just create the file org.jdownloader.api.myjdownloader.MyJDownloaderSettings.jso
 ```json
 {
     "serverhost" : "api.jdownloader.org",
-    "devicename" : "11notes/jdownloader2:latest",
+    "devicename" : "docker-11notes/jdownloader2:latest",
     "email" : "your@email.com",
     "password" : "password"
 }
