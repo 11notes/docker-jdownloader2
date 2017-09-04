@@ -59,7 +59,7 @@ Just create the file org.jdownloader.api.myjdownloader.MyJDownloaderSettings.jso
 
 * [openjdk:8-jre-alpine](https://hub.docker.com/_/openjdk/) - alpine linux jre 8 image
 * [jDownloader2](http://jdownloader.org/download/index) - jdownloader project
-* [docker-volume-netshare](http://netshare.containx.io/docs/getting-started) - NFS plugin for docker volumes
+* [docker-volume-netshare](https://github.com/ContainX/docker-volume-netshare) - external filesystem plugin for docker volumes
 
 ## tips
 
