@@ -1,6 +1,5 @@
 # ------ Header ------ #
 FROM openjdk:8-jre-alpine
-MAINTAINER 11notes <docker@11notes.ch>
 
 # ------ download latest version of jdownloader.jar and create folder structure ------ #
 
