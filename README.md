@@ -64,3 +64,7 @@ Just create the file org.jdownloader.api.myjdownloader.MyJDownloaderSettings.jso
 ## tips
 
 * Limit RAM consumption with docker -m
+* [alpine-docker-netshare](https://github.com/11notes/alpine-docker-netshare) - Examples to store downloads on NFS/CIFS/etc 
+
+
+
