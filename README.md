@@ -26,7 +26,7 @@ docker run -d \
 ```
 
 ## docker run (daemon with static ip and nfs plugin)
-
+```shell
 docker run -d \
     --network LAN \
     --ip 192.168.0.80 \
