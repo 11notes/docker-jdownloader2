@@ -8,10 +8,10 @@ VOLUME ["/downloads", "/config"]
 RUN mkdir -p /config \
     && mkdir -p /downloads \
     && mkdir -p /usr/local/lib/jd \
-    && wget --quiet -O /usr/local/lib/jd/JDownloader.jar http://installer.jdownloader.org/JDownloader.jar \
-    && chmod +x /usr/local/lib/jd/JDownloader.jar \
     && ln -s /downloads /root/Downloads \
     && ln -s /usr/local/lib/jd/cfg /config \
+    && wget --quiet -O /usr/local/lib/jd/JDownloader.jar http://installer.jdownloader.org/JDownloader.jar \
+    && chmod +x /usr/local/lib/jd/JDownloader.jar \
     && /usr/bin/java -Djava.awt.headless=true -jar /usr/local/lib/jd/JDownloader.jar
 
 # ------ CMD/START/STOP ------ #
